@@ -1,0 +1,5 @@
+Hi my name is Omar.
+This is a string which
+has about 25 words
+Words only consists of alphabets
+a to z and A to Z
