@@ -2,7 +2,7 @@ import java.util.Scanner;
 
 public class WordFrequencyTest{
 
-    public static void pt(String msg){
+    private static void pt(String msg){
         System.out.println(msg);
     }
 
@@ -11,8 +11,8 @@ public class WordFrequencyTest{
         pt("-----Testing isValidWord Function------");
         String goodWord1 = "Omar";
         String badWord1 = "$mar";
-        pt("String " + goodWord1 + " is " + WordFrequency.isValidWord(goodWord1));
-        pt("String " + badWord1 + " is " +  WordFrequency.isValidWord(badWord1));
+        System.out.printf("String %s is %s \n",goodWord1, WordFrequency.isValidWord(goodWord1));
+        System.out.printf("String %s is %s \n", badWord1, WordFrequency.isValidWord(badWord1));
         pt("------");
 
         //Testing buildWordFrequencyTable

@@ -30,7 +30,7 @@ public class WordFrequency{
         System.out.println("\t Word \t Frequency");
         int totalWords = 0;
         for ( String word : wordFrequency.keySet() ){
-            System.out.println("\t " + word + " \t " + wordFrequency.get(word));
+            System.out.printf("\t %s \t %s\n", word, wordFrequency.get(word));
             totalWords += wordFrequency.get(word);
         }
         System.out.println("Total Words in the table : " + totalWords);
@@ -40,8 +40,8 @@ public class WordFrequency{
     public static boolean isValidWord(String word){
         for (char c: word.toCharArray()){
             int ascii = c;
-            if ( (ascii < 97 || ascii > 122) &&
-                 (ascii < 65 || ascii > 90) 
+            if ( (c < 'a' || c > 'z') &&
+                 (c < 'A' || c > 'Z') 
                ){
                 return false;            
             }
