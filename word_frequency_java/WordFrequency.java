@@ -39,7 +39,6 @@ public class WordFrequency{
 
     public static boolean isValidWord(String word){
         for (char c: word.toCharArray()){
-            int ascii = c;
             if ( (c < 'a' || c > 'z') &&
                  (c < 'A' || c > 'Z') 
                ){
